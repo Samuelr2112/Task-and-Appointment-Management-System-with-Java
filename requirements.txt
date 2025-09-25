@@ -1,0 +1,48 @@
+# Requirements to run this project
+# NOTE: This is a plain text checklist of system/runtime requirements and commands for this Java project.
+# It is NOT a pip-style Python requirements file.
+
+# 1) Java JDK (required)
+# - Version: Java 17 (LTS).
+# - Recommended distribution: Eclipse Temurin / Adoptium or OpenJDK 17 builds.
+# - Verify install:
+#   java -version
+
+# 2) Maven (optional) / Maven Wrapper (included)
+# - The project includes the Maven wrapper (`mvnw` / `mvnw.cmd`). Prefer using the wrapper so CI/local use the same Maven.
+# - Windows PowerShell (project root):
+#   .\mvnw.cmd spring-boot:run
+#   .\mvnw.cmd test
+#   .\mvnw.cmd package
+# - Unix/macOS (project root):
+#   ./mvnw spring-boot:run
+
+# 3) Running the JAR (after package)
+# - Build: .\mvnw.cmd package
+# - Run the produced jar (project root):
+#   java -jar target\apptaskmanager-0.0.1-SNAPSHOT.jar
+
+# 4) Ports / endpoints
+# - App defaults to port 8080 (Spring Boot default).
+# - Web UI: http://localhost:8080/appointments-ui.html
+# - API endpoints (examples):
+#   GET  /appointments
+#   POST /appointments
+#   DELETE /appointments/{id}
+
+# 5) Helpful tools (optional)
+# - Git (to clone/update the repo)
+# - curl or Postman for API calls
+# - A modern browser to use the UI (no Node/npm required)
+
+# 6) Notes about dependencies present in the project
+# - pom.xml includes `spring-boot-starter-data-jpa` and `com.h2database:h2` but the code currently uses in-memory Maps (no JPA repositories).
+# - `spring-boot-devtools` is included for developer hot-reload (runtime scope).
+
+# 7) Platform-specific installers (examples)
+# - Windows (winget):
+#   winget install --id EclipseAdoptium.Temurin.17.JDK
+# - macOS (homebrew):
+#   brew install --cask temurin17
+
+# If you'd like a machine-check script (PowerShell) that verifies Java, the wrapper, and port availability, I can add it.

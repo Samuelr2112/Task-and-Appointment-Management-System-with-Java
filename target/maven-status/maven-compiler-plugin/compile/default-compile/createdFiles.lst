@@ -1,0 +1,10 @@
+com\samuel\appointments\apptaskmanager\ApptaskmanagerApplication.class
+com\samuel\appointments\apptaskmanager\AppointmentService.class
+com\samuel\appointments\apptaskmanager\ContactController.class
+com\samuel\appointments\apptaskmanager\TaskService.class
+com\samuel\appointments\apptaskmanager\TaskController.class
+com\samuel\appointments\apptaskmanager\Contact.class
+com\samuel\appointments\apptaskmanager\Appointment.class
+com\samuel\appointments\apptaskmanager\AppointmentController.class
+com\samuel\appointments\apptaskmanager\Task.class
+com\samuel\appointments\apptaskmanager\ContactService.class
